@@ -1,15 +1,19 @@
 <resources>
-    <string name="app_name">CRUDFirebaseKotlin</string>
+    <string name="app_name">Contacts</string>
     <string name="todo">TODO\n</string>
     <string name="sample_name">Kevin Morales</string>
     <string name="sample_phone">+593959084920</string>
-    <string name="alert_title">Ingresar nombre y teléfono</string>
+    <string name="alert_title">INGRESAR NOMBRE Y TELÉFONO</string>
+    <string name="alert_message">Al agregar tu contacto se guardará en la lista</string>
     <string name="ok">Agregar</string>
     <string name="cancel">Cancelar</string>
     <string name="input_name">Ingrese el nombre</string>
     <string name="input_phone">Ingrese el teléfono</string>
-    <string name="delete_contact_alert_title">Borrar contacto</string>
+    <string name="delete_contact_alert_title">BORRAR CONTACTO</string>
     <string name="delete_contact_alert_message">Al confirmar estarás borrando tu contacto de la lista</string>
     <string name="confirm">Confirmar</string>
-
+    <string name="loading_text">CARGANDO INFORMACIÓN</string>
+    <string name="update_data_text">ACTUALIZAR</string>
+    <string name="call_text">LLAMAR</string>
+    <string name="call_permission_denied">Permiso de llamada denegado</string>
 </resources>

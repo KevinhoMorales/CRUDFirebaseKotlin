@@ -1,13 +1,13 @@
-package com.kevinhomorales.crudfirebasekotlin.view.adapter
+package com.kevinhomorales.crudfirebasekotlin.contacts.view.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kevinhomorales.crudfirebasekotlin.databinding.RowContactBinding
-import com.kevinhomorales.crudfirebasekotlin.model.Contact
+import com.kevinhomorales.crudfirebasekotlin.contacts.model.Contact
 
-class ContactAdapter(private val context: Context, var itemClickListener: OnContactClickListener): RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() {
+class ContactAdapter(private val context: Context, var itemClickListener: OnContactClickListener, var deleteClickListener: OnContactDeleteClickListener): RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() {
     private lateinit var binding: RowContactBinding
     private var dataList = mutableListOf<Contact>()
 
@@ -37,6 +37,7 @@ class ContactAdapter(private val context: Context, var itemClickListener: OnCont
         fun bind(contact: Contact) {
             itemBinding.nameId.setText(contact.name)
             itemBinding.phoneId.setText(contact.phone)
+            itemBinding.deleteIconId.setOnClickListener { deleteClickListener.onContactDeleteClick(contact) }
             itemView.setOnClickListener { itemClickListener.onContactClick(contact) }
         }
     }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "11371139615",
+    "project_id": "crudfirebasekotlincontacts",
+    "storage_bucket": "crudfirebasekotlincontacts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11371139615:android:42c68e607155df7136bb2a",
+        "android_client_info": {
+          "package_name": "com.kevinhomorales.crudfirebasekotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIzD04YY_3qxfKnEThS79Yy1eVEHuxJVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
